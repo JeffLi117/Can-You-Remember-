@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Sen&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,6 +27,10 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-size: 12px;
+	box-sizing: border-box;
+	font-family: 'Sen', sans-serif;
+	background-color: beige;
 }
 ol, ul {
 	list-style: none;
@@ -42,3 +48,129 @@ table {
 	border-spacing: 0;
 }
 
+.title {
+	font-family: 'Miltonian Tattoo', cursive;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	border: 3px solid black;
+	border-radius: 15px;
+	margin: 1rem;
+	padding: 0.5rem;
+}
+
+img.title_img {
+	width: 2.3rem;
+}
+
+.Cardholder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.75rem;
+}
+
+.EachCard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	padding: 5px;
+	border: 2px solid black;
+	background-color:bisque;
+	opacity: 0.85;
+	border-radius: 12px;
+}
+
+.EachCard:hover {
+	background-color: rgb(255, 249, 128);
+	border: 2px solid black;
+	opacity: 1;
+}
+
+img {
+	width: 4rem;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	gap: 2rem;
+}
+
+.noClick  {
+	pointer-events: none;
+}
+
+.grayed {
+	background-color: gray;
+	opacity: 0.7;
+}
+
+.iconQ {
+	padding: 5px;
+	color:rgb(176, 0, 0);
+	border-radius: 25%;
+	width: fit-content;
+	height: fit-content;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: -2px;
+	top: -2px;
+	z-index: 13;
+}
+
+.overlayContent {
+	position: absolute;
+	background-color: beige;
+	right: 0;
+	left: 0;
+	margin: auto;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	z-index: 15;
+	padding: 1.5rem;
+	display: flex;
+	min-height: 60%;
+	max-height: 750px;
+	top: 10.5%;
+	position: absolute;
+	text-align: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	border: 2.5px solid black;
+	border-radius: 12px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: black;
+}
+  
+a:hover {
+	text-decoration: none;
+	color: rgb(242, 0, 255); 
+}
+  
+a:active {
+	text-decoration: none;
+	color: #0800ff;
+}
+
+@media screen and (min-width: 620px) {
+
+}
+
+@media screen and (min-width: 960px) {
+	
+}
+
+@media screen and (min-width: 1200px) {
+	
+}
