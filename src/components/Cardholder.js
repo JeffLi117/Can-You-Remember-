@@ -117,7 +117,7 @@ function Cardholder({noClick}) {
     }) */
     if (noClick) {
         return (
-            <div className="scoreAndCards noClick grayed">
+            <div className="scoreAndCards noClick">
                 <div className="bestScore">Best Score: {best}</div>
                 <div className="currentScore">Current Score: {current}</div>
                 <div className="Cardholder" /* onClick={handleClick} */>

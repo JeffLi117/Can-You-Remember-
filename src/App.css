@@ -16,8 +16,6 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -25,12 +23,16 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+	height: 100%;
+}
 body {
 	line-height: 1;
-	font-size: 12px;
 	box-sizing: border-box;
 	font-family: 'Sen', sans-serif;
-	background-color: beige;
+	font-size: 12px;
+	background-color:antiquewhite;
+	min-height: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -48,16 +50,17 @@ table {
 	border-spacing: 0;
 }
 
+#root, .App {
+	height: 100vh;
+}
+
 .title {
 	font-family: 'Miltonian Tattoo', cursive;
-	font-size: 1.5rem;
+	font-size: 1.75em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 0.5rem;
-	border: 3px solid black;
-	border-radius: 15px;
-	margin: 1rem;
 	padding: 0.5rem;
 }
 
@@ -84,10 +87,18 @@ img.title_img {
 	border-radius: 12px;
 }
 
-.EachCard:hover {
-	background-color: rgb(255, 249, 128);
-	border: 2px solid black;
-	opacity: 1;
+.bestScore, .currentScore {
+	margin: 0.5rem;
+	margin-top: 0;
+	text-align: center;
+}
+
+.bestScore {
+	font-size: 1.1em;
+}
+
+.currentScore {
+	font-size: 1.35em;
 }
 
 img {
@@ -103,17 +114,18 @@ ul {
 
 .noClick  {
 	pointer-events: none;
+	opacity: 0.7;
 }
 
-.grayed {
-	background-color: gray;
-	opacity: 0.7;
+
+.SideBackground {
+	display: none;
 }
 
 .iconQ {
 	padding: 5px;
 	color:rgb(176, 0, 0);
-	border-radius: 25%;
+	border-radius: 50%;
 	width: fit-content;
 	height: fit-content;
 	position: absolute;
@@ -134,23 +146,34 @@ ul {
 	margin-left: 3rem;
 	margin-right: 3rem;
 	z-index: 15;
-	padding: 1.5rem;
+	padding: 2.5em;
+	padding-left: 3.5em;
+	padding-right: 3.5em;
 	display: flex;
 	min-height: 60%;
 	max-height: 750px;
-	top: 10.5%;
+	top: 12.5%;
 	position: absolute;
 	text-align: center;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 	border: 2.5px solid black;
 	border-radius: 12px;
 }
 
+.questionLines1, .questionLines2 {
+	margin: 0.5rem;
+}
+
+.questionLines1 {
+	font-size: 1.35em;
+	font-weight: bolder;
+}
+
 a:link, a:visited {
 	text-decoration: none;
-	color: black;
+	color: orange;
 }
   
 a:hover {
@@ -163,14 +186,81 @@ a:active {
 	color: #0800ff;
 }
 
-@media screen and (min-width: 620px) {
+img.sidebars {
+	width: 100%;
+}
 
+@media (pointer: fine) {
+	.EachCard:hover {
+		background-color: orange;
+		border: 2px solid black;
+		opacity: 1;
+		box-shadow: 1px 1px 1px 1px rgb(0,0,0,0.4);
+	}
+	.iconQ:hover {
+		color: orange;
+		box-shadow: 1px 1px 1px 1px rgb(0,0,0,0.4);
+	}
+}
+
+@media screen and (min-width: 620px) {
+	body {
+		font-size: 16px;
+	}	
+	.SideBackground1 {
+		display: block;
+		opacity: 0.3;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: calc(12% + 8vw);
+		height: 100%;
+		background: url('./components/pika.png');
+		background-size: 100%;
+		border-right: 4px solid rgb(255, 107, 1);
+	}
+	.SideBackground2 {
+		display: block;
+		opacity: 0.3;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: calc(12% + 8vw);
+		height: 100%;
+		background: url('./components/pika.png');
+		background-size: 100%;
+		border-left: 4px solid rgb(255, 107, 1);
+	}
+	.overlayContent {
+		padding-left: 13vw;
+		padding-right: 13vw;
+		margin-left: 12vw;
+		margin-right: 12vw;
+	}
 }
 
 @media screen and (min-width: 960px) {
+	body {
+		font-size: 20px;
+	}
+	img.title_img {
+		width: 1.7em;
+	}
+	img {
+		width: 3.5em;
+	}
+	ul {
+		gap: 1em;
+	}
 	
+	.overlayContent {
+		margin-left: 14vw;
+		margin-right: 14vw;
+	}
 }
 
-@media screen and (min-width: 1200px) {
-	
+
+.grayed {
+	background-color: gray;
+	opacity: 0.7;
 }
