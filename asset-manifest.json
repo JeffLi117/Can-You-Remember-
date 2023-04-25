@@ -1,16 +1,27 @@
 {
   "files": {
-    "main.css": "/Can-You-Remember-/static/css/main.073c9b0a.css",
-    "main.js": "/Can-You-Remember-/static/js/main.0267d8e1.js",
-    "static/js/787.0c28499f.chunk.js": "/Can-You-Remember-/static/js/787.0c28499f.chunk.js",
-    "static/media/logo.svg": "/Can-You-Remember-/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/Can-You-Remember-/static/css/main.5374ac53.css",
+    "main.js": "/Can-You-Remember-/static/js/main.29afae3b.js",
+    "static/media/pika.png": "/Can-You-Remember-/static/media/pika.97141b58eec37c8f98e1.png",
+    "static/media/Venusaur.png": "/Can-You-Remember-/static/media/Venusaur.59c1c5170cd12add7078.png",
+    "static/media/Bulbasaur.png": "/Can-You-Remember-/static/media/Bulbasaur.35177e2fa0457c6eda75.png",
+    "static/media/Kadabra.png": "/Can-You-Remember-/static/media/Kadabra.2cdd01be6215781358ff.png",
+    "static/media/Cubone.png": "/Can-You-Remember-/static/media/Cubone.072a92451ec36f11aeda.png",
+    "static/media/Charizard.png": "/Can-You-Remember-/static/media/Charizard.38167b2074a0847c4563.png",
+    "static/media/Jigglypuff.png": "/Can-You-Remember-/static/media/Jigglypuff.0ad7e155cce9f31bdbbd.png",
+    "static/media/Charmander.png": "/Can-You-Remember-/static/media/Charmander.2c4bbb312deef60a4dda.png",
+    "static/media/pokeball.png": "/Can-You-Remember-/static/media/pokeball.d4f4c36374aad37e3be4.png",
+    "static/media/Mr_Mime.png": "/Can-You-Remember-/static/media/Mr_Mime.9d357b462999b9e0ad0f.png",
+    "static/media/Pikachu.png": "/Can-You-Remember-/static/media/Pikachu.330ecc6e9757234f44ef.png",
+    "static/media/Psyduck.png": "/Can-You-Remember-/static/media/Psyduck.23f18edab3e776c5e337.png",
+    "static/media/Squirtle.png": "/Can-You-Remember-/static/media/Squirtle.47260f08dceab4ba4f18.png",
+    "static/media/Meowth.png": "/Can-You-Remember-/static/media/Meowth.b24dd6acca08869380b8.png",
     "index.html": "/Can-You-Remember-/index.html",
-    "main.073c9b0a.css.map": "/Can-You-Remember-/static/css/main.073c9b0a.css.map",
-    "main.0267d8e1.js.map": "/Can-You-Remember-/static/js/main.0267d8e1.js.map",
-    "787.0c28499f.chunk.js.map": "/Can-You-Remember-/static/js/787.0c28499f.chunk.js.map"
+    "main.5374ac53.css.map": "/Can-You-Remember-/static/css/main.5374ac53.css.map",
+    "main.29afae3b.js.map": "/Can-You-Remember-/static/js/main.29afae3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.0267d8e1.js"
+    "static/css/main.5374ac53.css",
+    "static/js/main.29afae3b.js"
   ]
 }
